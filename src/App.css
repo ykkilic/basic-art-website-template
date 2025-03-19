@@ -1,0 +1,236 @@
+/* .layout {
+  min-height: 100vh;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 64px;
+  margin-bottom: 16px;
+}
+
+.logo {
+  margin-right: 24px;
+}
+
+.search-input {
+  max-width: 400px;
+  margin-right: auto;
+}
+
+.header-actions {
+  display: flex;
+  gap: 16px;
+}
+
+.artwork-card {
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+.artwork-card img {
+  height: 300px;
+  object-fit: cover;
+}
+
+.featured-section {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Override Ant Design styles */
+.ant-menu {
+  justify-content: center;
+}
+
+.ant-card-meta-title {
+  margin-bottom: 8px !important;
+}
+
+.ant-card-meta-description {
+  line-height: 1.5;
+}
+
+/* Reset some default styles */
+body {
+  margin: 0;
+  padding: 0;
+  background: #f0f2f5;
+}
+
+#root {
+  max-width: none;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+} */
+
+/* Genel Layout */
+.layout {
+  min-height: 100vh;
+  background-color: #f5f5f5;
+}
+
+/* Header Ayarları */
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  width: 300px;
+}
+
+.header-actions {
+  display: flex;
+  gap: 15px;
+}
+
+/* Menü */
+.ant-menu {
+  display: flex;
+  justify-content: center;
+}
+
+.ant-menu-item {
+  font-weight: 500;
+}
+
+/* Ana İçerik */
+.featured-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Kartlar */
+.artwork-card {
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+  height: 100%;
+  position: relative;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.artwork-card:hover {
+  transform: translateY(-5px);
+}
+
+.artwork-card .ant-card-cover {
+  height: 200px; /* Tüm resimler için sabit yükseklik */
+  overflow: hidden;
+  position: relative;
+}
+
+.artwork-card .ant-card-cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Görüntüyü kırpmadan sığdırır */
+  display: block;
+}
+
+.artwork-card .ant-card-meta-title {
+  font-size: 16px;
+  margin-bottom: 8px !important;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.artwork-card .ant-card-meta-description {
+  line-height: 1.5;
+}
+
+/* Sanatçı adı ve fiyat stilleri */
+.artist-name {
+  color: #666;
+  font-size: 14px;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.artwork-price {
+  color: #1890ff;
+  font-size: 16px;
+  display: block;
+}
+
+/* Artwork List Container */
+.artwork-list-container {
+  padding: 20px 0;
+}
+
+/* Footer */
+.ant-layout-footer {
+  text-align: center;
+  background-color: #fff;
+  padding: 20px;
+  font-size: 14px;
+  color: #666;
+}
+
+.footer {
+  height: 200px;
+  overflow: hidden;
+  background: #f0f0f0;
+  padding: 20px;
+}
+
+/* Thumbnail Küçük Resimler */
+.product-thumbnails {
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.thumbnail-img {
+  width: 60px; /* Thumbnail resmini küçültüyoruz */
+  height: 60px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.thumbnail-img:hover {
+  transform: scale(1.1);
+}
+
+/* Seçilen Thumbnail */
+.thumbnail-img[selected] {
+  border: 2px solid blue;
+}
+
+/* :where(.css-dev-only-do-not-override-tjsggz).ant-card .ant-card-body {
+  padding: 0px !important;
+  border-radius: 0 0 8px 8px;
+} */
+
+:where(.css-dev-only-do-not-override-tjsggz).ant-card .ant-card-body {
+  padding: 0px !important;
+  border-radius: 0 0 8px 8px;
+}
+
+/* Grid düzeltmesi */
+.ant-row {
+  margin: -12px !important;
+}
+
+.ant-col {
+  padding: 12px !important;
+  float: left;
+}
+
+.header-logo-link {
+  color: #000000 !important;
+}
+
